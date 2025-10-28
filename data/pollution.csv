@@ -1,0 +1,488 @@
+Country Label,Pollutant,Unit,Value
+Afghanistan,PM2.5,µg/m³,-431.5
+Algeria,PM2.5,µg/m³,78.0
+Andorra,CO,µg/m³,100.0
+Andorra,NO2,µg/m³,4.7
+Andorra,O3,µg/m³,68.33333333333333
+Andorra,PM10,µg/m³,11.0
+Andorra,PM2.5,µg/m³,7.9
+Andorra,SO2,µg/m³,0.2
+Antigua and Barbuda,PM2.5,µg/m³,10.0
+Argentina,CO,µg/m³,590.0
+Argentina,NO2,µg/m³,12.5
+Argentina,O3,µg/m³,26.0
+Argentina,PM10,µg/m³,10.4
+Argentina,PM2.5,µg/m³,6.148883930097023
+Argentina,SO2,µg/m³,5.71
+Argentina,TEMPERATURE,c,19.753720462322235
+Armenia,PM2.5,µg/m³,10.4
+Australia,PM10,µg/m³,-103.50486187845303
+Australia,PM2.5,µg/m³,-96.87456315690096
+Australia,TEMPERATURE,c,26.857342660427094
+Austria,CO,µg/m³,444.30559101694917
+Austria,NO2,µg/m³,29.293419231275166
+Austria,O3,µg/m³,40.03043891402715
+Austria,PM10,µg/m³,21.417384447976655
+Austria,PM2.5,µg/m³,13.971359854780195
+Austria,SO2,µg/m³,2.2922135619285715
+Austria,TEMPERATURE,c,9.904097292158339
+Azerbaijan,PM2.5,µg/m³,12.0
+Bahrain,PM2.5,µg/m³,23.0
+Bangladesh,CO,µg/m³,1230.0
+Bangladesh,NO2,µg/m³,14.145
+Bangladesh,O3,µg/m³,5.195
+Bangladesh,PM10,µg/m³,108.4
+Bangladesh,PM2.5,µg/m³,60.35
+Bangladesh,SO2,µg/m³,21.025
+Belgium,CO,µg/m³,305.7242857142857
+Belgium,NO2,µg/m³,-4.795461538461538
+Belgium,O3,µg/m³,-1.3729259259259265
+Belgium,PM1,µg/m³,14.943452517191568
+Belgium,PM10,µg/m³,11.31818183053
+Belgium,PM2.5,µg/m³,-17.01324585723877
+Belgium,RELATIVEHUMIDITY,%,39.67897383371989
+Belgium,SO2,µg/m³,1.695
+Belgium,TEMPERATURE,c,16.050654808680218
+Belgium,UM003,particles/cm³,2669.1979166666665
+Belize,PM2.5,µg/m³,15.0
+Bermuda,PM2.5,µg/m³,17.0
+Bosnia and Herzegovina,CO,µg/m³,612.875
+Bosnia and Herzegovina,NO2,µg/m³,24.383333333333333
+Bosnia and Herzegovina,O3,µg/m³,30.30588235294118
+Bosnia and Herzegovina,PM10,µg/m³,62.083333333333336
+Bosnia and Herzegovina,PM2.5,µg/m³,42.18571428571429
+Bosnia and Herzegovina,SO2,µg/m³,44.07647058823529
+Brazil,NO2,µg/m³,29.753333333333334
+Brazil,O3,µg/m³,69.24984126984127
+Brazil,PM10,µg/m³,33.853050847457624
+Brazil,PM2.5,µg/m³,17.657941176470587
+Brazil,SO2,µg/m³,10.892105263157895
+Bulgaria,CO,µg/m³,550.5907605
+Bulgaria,NO2,µg/m³,23.979848583600003
+Bulgaria,O3,µg/m³,25.593157894736844
+Bulgaria,PM10,µg/m³,29.914814814814818
+Bulgaria,PM2.5,µg/m³,14.225
+Bulgaria,SO2,µg/m³,9.404882714615384
+Canada,NO,ppm,0.0006641509433962274
+Canada,NOX,ppm,0.004304166666666667
+Canada,PM1,µg/m³,3.6201686714672383
+Canada,PM10,µg/m³,13.43865995753843
+Canada,PM2.5,µg/m³,6.906756295816547
+Canada,RELATIVEHUMIDITY,%,58.677604251437714
+Canada,TEMPERATURE,c,8.222006276525834
+Canada,UM003,particles/cm³,600.7422642178005
+Central African Republic,PM2.5,µg/m³,13.0
+Chad,PM2.5,µg/m³,-999.0
+Chile,CO,µg/m³,692.745090909091
+Chile,NO2,µg/m³,22.664035087719295
+Chile,O3,µg/m³,38.638644067796605
+Chile,PM10,µg/m³,61.785053763440864
+Chile,PM2.5,µg/m³,18.67082813186553
+Chile,SO2,µg/m³,12.453462637362637
+Chile,TEMPERATURE,c,24.073467334111534
+China,CO,µg/m³,644.9864894194249
+China,NO2,µg/m³,18.388756756756756
+China,O3,µg/m³,131.60578378378378
+China,PM10,µg/m³,40.26688276607239
+China,PM2.5,µg/m³,11.789371980676327
+China,SO2,µg/m³,7.264216216216216
+Colombia,PM10,µg/m³,-932.3272843333332
+Colombia,PM2.5,µg/m³,-623.6179938
+"Congo, Democratic Republic of the",PM2.5,µg/m³,18.0
+Costa Rica,PM2.5,µg/m³,-999.0
+Croatia,CO,µg/m³,366.6666666666667
+Croatia,NO2,µg/m³,14.529133333333334
+Croatia,O3,µg/m³,65.46428571428571
+Croatia,PM10,µg/m³,14.450000000000001
+Croatia,PM2.5,µg/m³,8.636363636363637
+Croatia,SO2,µg/m³,12.79775
+Cyprus,CO,µg/m³,4265.770644444445
+Cyprus,NO2,µg/m³,31.72389772727273
+Cyprus,O3,µg/m³,46.576344909090906
+Cyprus,PM10,µg/m³,18.717557875
+Cyprus,PM2.5,µg/m³,9.570092
+Cyprus,SO2,µg/m³,2.667164718181818
+Czech Republic,CO,µg/m³,424.74569687499996
+Czech Republic,NO2,µg/m³,10.73072103896104
+Czech Republic,O3,µg/m³,60.3320044117647
+Czech Republic,PM1,µg/m³,26.719717224438988
+Czech Republic,PM10,µg/m³,23.73642654087535
+Czech Republic,PM2.5,µg/m³,16.767094821558885
+Czech Republic,RELATIVEHUMIDITY,%,51.42730553944906
+Czech Republic,SO2,µg/m³,4.726668679245283
+Czech Republic,TEMPERATURE,c,19.83318424224854
+Czech Republic,UM003,particles/cm³,4625.28423055013
+Côte d'Ivoire,PM2.5,µg/m³,-999.0
+Denmark,CO,µg/m³,315.0
+Denmark,NO2,µg/m³,17.496666666666666
+Denmark,O3,µg/m³,40.52
+Denmark,PM10,µg/m³,15.2125
+Denmark,PM2.5,µg/m³,0.8139880994955698
+Denmark,SO2,µg/m³,1.15
+Denmark,TEMPERATURE,c,13.699305613835651
+Ecuador,O3,µg/m³,0.0
+Ecuador,PM10,µg/m³,0.0
+Ecuador,PM2.5,µg/m³,0.0
+Egypt,PM2.5,µg/m³,27.5
+Estonia,CO,µg/m³,216.1784
+Estonia,NO2,µg/m³,4.28932
+Estonia,O3,µg/m³,52.7703
+Estonia,PM10,µg/m³,13.6916
+Estonia,PM2.5,µg/m³,5.824125
+Estonia,SO2,µg/m³,0.40709083333333335
+Ethiopia,PM2.5,µg/m³,-313.3333333333333
+Finland,NO2,µg/m³,11.731324904651162
+Finland,O3,µg/m³,70.71341461666667
+Finland,PM10,µg/m³,14.5819995184
+Finland,PM2.5,µg/m³,3.494708597857143
+Finland,SO2,µg/m³,1.12902405
+France,CO,µg/m³,191.66444444444443
+France,NO2,µg/m³,23.518005477031803
+France,O3,µg/m³,46.12520837004406
+France,PM1,µg/m³,0.0
+France,PM10,µg/m³,14.696697478994727
+France,PM2.5,µg/m³,8.637229639466305
+France,RELATIVEHUMIDITY,%,42.14915148417155
+France,SO2,µg/m³,1.6798170731707318
+France,TEMPERATURE,c,16.739404956499733
+France,UM003,particles/cm³,209.11309560139972
+Gabon,PM2.5,µg/m³,17.0
+Germany,CO,µg/m³,360.89338536363636
+Germany,NO2,µg/m³,15.485849777796977
+Germany,O3,µg/m³,38.69062019570513
+Germany,PM1,µg/m³,17.606018059341995
+Germany,PM10,µg/m³,22.121781993736498
+Germany,PM2.5,µg/m³,18.38233692068142
+Germany,RELATIVEHUMIDITY,%,47.48941007614136
+Germany,SO2,µg/m³,23.658585306
+Germany,TEMPERATURE,c,10.831822893354628
+Germany,UM003,particles/cm³,2958.5127978515625
+Ghana,PM1,µg/m³,12.648313442866007
+Ghana,PM10,µg/m³,20.473799626032513
+Ghana,PM2.5,µg/m³,-158.90630428357557
+Ghana,RELATIVEHUMIDITY,%,65.40148830413818
+Ghana,TEMPERATURE,c,32.69781548567493
+Ghana,UM003,particles/cm³,3052.1359252929688
+Gibraltar,CO,µg/m³,470.0
+Gibraltar,NO2,µg/m³,38.03333333333333
+Gibraltar,O3,µg/m³,84.2
+Gibraltar,SO2,µg/m³,1.5
+Greece,CO,µg/m³,1052.3809523809523
+Greece,NO2,µg/m³,23.147058823529413
+Greece,O3,µg/m³,43.36666666666667
+Greece,PM10,µg/m³,25.363636363636363
+Greece,PM2.5,µg/m³,15.75
+Greece,SO2,µg/m³,6.352941176470588
+Guatemala,PM10,µg/m³,1.0
+Guatemala,PM2.5,µg/m³,-483.0
+Guinea,PM2.5,µg/m³,-999.0
+"Hong Kong, China",CO,µg/m³,654.6727272727272
+"Hong Kong, China",NO2,µg/m³,60.21111111111111
+"Hong Kong, China",O3,µg/m³,45.349999999999994
+"Hong Kong, China",PM10,µg/m³,51.32222222222222
+"Hong Kong, China",PM2.5,µg/m³,35.05
+"Hong Kong, China",SO2,µg/m³,5.383333333333334
+Hungary,CO,µg/m³,784.8483870375
+Hungary,NO2,µg/m³,29.448695025925925
+Hungary,O3,µg/m³,42.6222581935065
+Hungary,PM10,µg/m³,25.966681398823532
+Hungary,PM2.5,µg/m³,16.488711184615383
+Hungary,SO2,µg/m³,7.954054955714285
+Iceland,CO,µg/m³,102.414
+Iceland,NO2,µg/m³,5.589285733333333
+Iceland,PM1,µg/m³,1.148705
+Iceland,PM10,µg/m³,72.48935200000001
+Iceland,PM2.5,µg/m³,3.76624
+Iceland,SO2,µg/m³,11.141062
+India,CO,µg/m³,1415.7424060150374
+India,NO2,µg/m³,36.29724565756824
+India,O3,µg/m³,25.899527559055116
+India,PM10,µg/m³,180.06112565445028
+India,PM2.5,µg/m³,94.92856678232333
+India,SO2,µg/m³,16.05568123393316
+India,TEMPERATURE,c,28.563547706604005
+Indonesia,PM1,µg/m³,36.441145737965904
+Indonesia,PM10,µg/m³,67.40848223368326
+Indonesia,PM2.5,µg/m³,-412.17079081308276
+Indonesia,RELATIVEHUMIDITY,%,75.23928642272949
+Indonesia,TEMPERATURE,c,29.95282745361328
+Indonesia,UM003,particles/cm³,7157.075887044271
+Iraq,CO,µg/m³,232.21666666666667
+Iraq,NO2,µg/m³,10.281333333333334
+Iraq,O3,µg/m³,50.79266666666666
+Iraq,PM10,µg/m³,65.88533333333332
+Iraq,PM2.5,µg/m³,47.8106
+Iraq,SO2,µg/m³,422.9996666666666
+Ireland,CO,µg/m³,267.21989890500004
+Ireland,NO2,µg/m³,28.050587935294118
+Ireland,O3,µg/m³,39.094443999999996
+Ireland,PM10,µg/m³,-364.1769230769231
+Ireland,PM2.5,µg/m³,16.054789683381717
+Ireland,SO2,µg/m³,3.7014598225
+Ireland,TEMPERATURE,c,18.139657656351726
+Israel,PM2.5,µg/m³,10.1
+Italy,CO,µg/m³,682.6149004390243
+Italy,NO2,µg/m³,20.211397077304348
+Italy,O3,µg/m³,52.36162811479592
+Italy,PM1,µg/m³,5.591703849037488
+Italy,PM10,µg/m³,14.70453449652246
+Italy,PM2.5,µg/m³,9.323980107453846
+Italy,RELATIVEHUMIDITY,%,85.82648785909016
+Italy,SO2,µg/m³,2.972598447444934
+Italy,TEMPERATURE,c,15.71232550409105
+Italy,UM003,particles/cm³,2704.910685221354
+Japan,NO,ppm,0.0012614285714285715
+Japan,NOX,ppm,0.005501430615164521
+Japan,PM2.5,µg/m³,5.831050072727919
+Japan,TEMPERATURE,c,19.973809560139973
+Jordan,PM2.5,µg/m³,9.0
+Kazakhstan,PM2.5,µg/m³,116.5
+Kenya,PM10,µg/m³,5.5
+Kenya,PM2.5,µg/m³,9.0
+"Korea, Republic of",PM2.5,µg/m³,19.05
+Kuwait,PM2.5,µg/m³,38.0
+Kyrgyzstan,PM2.5,µg/m³,19.0
+Lao People's Dem. Rep.,PM10,µg/m³,25.6
+Lao People's Dem. Rep.,PM2.5,µg/m³,21.945833373069764
+Lao People's Dem. Rep.,TEMPERATURE,c,27.944652795791626
+Latvia,CO,µg/m³,260.0
+Latvia,NO2,µg/m³,22.09242011111111
+Latvia,O3,µg/m³,49.947909777777774
+Latvia,PM10,µg/m³,21.3974999775
+Latvia,PM2.5,µg/m³,6.163333335
+Latvia,SO2,µg/m³,0.5958397085714285
+Lithuania,CO,µg/m³,244.48199555555553
+Lithuania,NO2,µg/m³,6.844017871428571
+Lithuania,O3,µg/m³,80.79514621692307
+Lithuania,PM10,µg/m³,66.22384628461539
+Lithuania,PM2.5,µg/m³,17.149999468
+Lithuania,SO2,µg/m³,4.996578906666667
+Luxembourg,CO,µg/m³,233.33333333333334
+Luxembourg,NO2,µg/m³,11.411111111111111
+Luxembourg,O3,µg/m³,69.75
+Luxembourg,PM10,µg/m³,14.333333333333334
+Luxembourg,PM2.5,µg/m³,7.966666666666666
+Luxembourg,SO2,µg/m³,3.9499999999999997
+"Macedonia, The former Yugoslav Rep. of",CO,µg/m³,1299.7501054545455
+"Macedonia, The former Yugoslav Rep. of",NO2,µg/m³,12.755561739130435
+"Macedonia, The former Yugoslav Rep. of",O3,µg/m³,36.52435652173913
+"Macedonia, The former Yugoslav Rep. of",PM10,µg/m³,29.47061904761905
+"Macedonia, The former Yugoslav Rep. of",PM2.5,µg/m³,17.883933333333335
+"Macedonia, The former Yugoslav Rep. of",SO2,µg/m³,2.9590318589473683
+Madagascar,PM2.5,µg/m³,18.0
+Malaysia,PM10,µg/m³,27.5
+Malaysia,PM2.5,µg/m³,8.658749995628993
+Malaysia,TEMPERATURE,c,26.88333320617676
+Mali,PM2.5,µg/m³,-999.0
+Malta,CO,µg/m³,205.481
+Malta,NO2,µg/m³,4.695825
+Malta,O3,µg/m³,85.752235
+Malta,PM10,µg/m³,14.697666666666668
+Malta,PM2.5,µg/m³,13.4765
+Malta,SO2,µg/m³,0.10437
+Mexico,NO,ppm,0.02566510829840217
+Mexico,NOX,ppm,0.04165369174982426
+Mexico,PM1,µg/m³,7.201264878114065
+Mexico,PM10,µg/m³,76.1054682533101
+Mexico,PM2.5,µg/m³,29.689909624188733
+Mexico,RELATIVEHUMIDITY,%,20.62434514363607
+Mexico,TEMPERATURE,c,20.190699577331543
+Mexico,UM003,particles/cm³,1670.9300587972004
+"Moldova, Republic of",NO2,µg/m³,12.67044171
+"Moldova, Republic of",PM2.5,µg/m³,18.0
+"Moldova, Republic of",SO2,µg/m³,5.27553229
+Mongolia,CO,µg/m³,151.5
+Mongolia,NO2,µg/m³,41.707317073170735
+Mongolia,O3,µg/m³,28.25
+Mongolia,PM10,µg/m³,181.14814814814815
+Mongolia,PM2.5,µg/m³,111.05454545454545
+Mongolia,SO2,µg/m³,36.048780487804876
+Montenegro,CO,µg/m³,458.0
+Montenegro,NO2,µg/m³,10.1375
+Montenegro,O3,µg/m³,61.85
+Montenegro,PM10,µg/m³,22.14
+Montenegro,PM2.5,µg/m³,20.54
+Montenegro,SO2,µg/m³,14.080000000000002
+Morocco,PM2.5,µg/m³,5.0
+Mozambique,PM2.5,µg/m³,4.0
+Myanmar,PM10,µg/m³,54.0
+Myanmar,PM2.5,µg/m³,49.96666666666667
+Nepal,PM2.5,µg/m³,29.05218251546224
+Nepal,TEMPERATURE,c,19.73660723368327
+Netherlands,CO,µg/m³,-397.76745999999997
+Netherlands,NO2,µg/m³,-580.7029113924051
+Netherlands,O3,µg/m³,-133.66208333333333
+Netherlands,PM1,µg/m³,11.087797657648725
+Netherlands,PM10,µg/m³,-239.785376987875
+Netherlands,PM2.5,µg/m³,-77.76508471318036
+Netherlands,RELATIVEHUMIDITY,%,62.25299326578776
+Netherlands,SO2,µg/m³,-151.69615384615383
+Netherlands,TEMPERATURE,c,11.244843276341756
+Netherlands,UM003,particles/cm³,1349.21115620931
+New Zealand,CO,µg/m³,309.7708
+New Zealand,NO2,µg/m³,8.34367085
+New Zealand,PM1,µg/m³,1.1875
+New Zealand,PM10,µg/m³,15.991346348484848
+New Zealand,PM2.5,µg/m³,7.229572906666666
+New Zealand,RELATIVEHUMIDITY,%,86.94461886088054
+New Zealand,SO2,µg/m³,-0.4294061
+New Zealand,TEMPERATURE,c,15.687362353006998
+New Zealand,UM003,particles/cm³,455.25
+Nicaragua,PM2.5,µg/m³,14.8375
+Nigeria,PM2.5,µg/m³,37.23333333333333
+Norway,CO,µg/m³,304.205
+Norway,NO2,µg/m³,24.599437610117743
+Norway,O3,µg/m³,51.446931615384614
+Norway,PM10,µg/m³,15.2978142993
+Norway,PM2.5,µg/m³,10.303795174208064
+Norway,SO2,µg/m³,3.3901275
+Pakistan,PM2.5,µg/m³,28.8
+Peru,CO,µg/m³,4214.798333333333
+Peru,NO2,µg/m³,30.63153846153846
+Peru,O3,µg/m³,22.62
+Peru,PM10,µg/m³,67.03461538461539
+Peru,PM2.5,µg/m³,-33.69866666666666
+Peru,SO2,µg/m³,45.50384615384615
+Philippines,PM2.5,µg/m³,11.4
+Poland,BC,µg/m³,0.7688018867924528
+Poland,CO,µg/m³,491.9175851351351
+Poland,NO2,µg/m³,10.574093973333333
+Poland,O3,µg/m³,56.74997107333334
+Poland,PM10,µg/m³,24.63212378571429
+Poland,PM2.5,µg/m³,23.942290307070483
+Poland,SO2,µg/m³,11.706925442424241
+Poland,TEMPERATURE,c,7.712351163228353
+Portugal,CO,µg/m³,378.2142857142857
+Portugal,NO2,µg/m³,7.977586206896552
+Portugal,O3,µg/m³,99.29268292682927
+Portugal,PM10,µg/m³,12.794444444444444
+Portugal,PM2.5,µg/m³,3.9105263157894736
+Portugal,SO2,µg/m³,3.3368421052631576
+Puerto Rico,PM10,µg/m³,33.5
+Puerto Rico,PM2.5,µg/m³,29.425
+Qatar,PM2.5,µg/m³,50.0
+Romania,NO2,µg/m³,15.380301544615385
+Romania,O3,µg/m³,71.5993998625
+Romania,PM10,µg/m³,19.066018587692305
+Romania,PM2.5,µg/m³,8.899424214444444
+Romania,SO2,µg/m³,6.424894865000001
+Russian Federation,CO,µg/m³,317.14285714285717
+Russian Federation,NO2,µg/m³,23.52881204081633
+Russian Federation,O3,µg/m³,51.64985496666666
+Russian Federation,PM10,µg/m³,23.223166666666668
+Russian Federation,PM2.5,µg/m³,8.405949999999999
+Russian Federation,SO2,µg/m³,4.430434782608696
+Rwanda,PM10,µg/m³,0.0
+Rwanda,PM2.5,µg/m³,24.95
+Saudi Arabia,CO,µg/m³,1457.755
+Saudi Arabia,NO2,µg/m³,11.971
+Saudi Arabia,PM10,µg/m³,39.861
+Saudi Arabia,PM2.5,µg/m³,80.46459999999999
+Saudi Arabia,SO2,µg/m³,13.922
+Senegal,PM1,µg/m³,10.77315668626265
+Senegal,PM10,µg/m³,19.795277508822355
+Senegal,PM2.5,µg/m³,18.965353532270957
+Senegal,RELATIVEHUMIDITY,%,86.1463456587358
+Senegal,TEMPERATURE,c,20.125328063964844
+Senegal,UM003,particles/cm³,2026.9462224786928
+Serbia,CO,µg/m³,319.0976886585365
+Serbia,NO2,µg/m³,15.290670789950266
+Serbia,O3,µg/m³,46.28002632039366
+Serbia,PM10,µg/m³,16.54045888860136
+Serbia,PM2.5,µg/m³,11.091751348224706
+Serbia,SO2,µg/m³,8.625459271612636
+Serbia and Montenegro,PM2.5,µg/m³,14.0
+Singapore,PM2.5,µg/m³,282.9
+Slovakia,CO,µg/m³,624.4161379310344
+Slovakia,NO2,µg/m³,21.471892733387097
+Slovakia,O3,µg/m³,44.36020512820513
+Slovakia,PM10,µg/m³,24.99682402428571
+Slovakia,PM2.5,µg/m³,19.107756944444443
+Slovakia,SO2,µg/m³,8.083452801875
+Slovenia,NO2,µg/m³,5.0
+Slovenia,O3,µg/m³,74.01350000000001
+Slovenia,PM10,µg/m³,12.994736842105263
+Slovenia,PM2.5,µg/m³,15.1
+Slovenia,SO2,µg/m³,0.535044495
+South Africa,NO,ppm,-0.07244230656934307
+South Africa,NO2,µg/m³,1.07
+South Africa,NOX,ppm,-0.06727348175182483
+South Africa,O3,µg/m³,13.28
+South Africa,PM10,µg/m³,4.0175985915492936
+South Africa,PM2.5,µg/m³,-16.906157480314963
+South Africa,SO2,µg/m³,6.49
+Spain,CO,µg/m³,487.26181818181817
+Spain,NO2,µg/m³,12.630576323987539
+Spain,O3,µg/m³,60.94555133079848
+Spain,PM1,µg/m³,9.34548611442248
+Spain,PM10,µg/m³,17.269044236323936
+Spain,PM2.5,µg/m³,8.875186850710168
+Spain,RELATIVEHUMIDITY,%,52.51999950408936
+Spain,SO2,µg/m³,3.249485596707819
+Spain,TEMPERATURE,c,18.91986099878947
+Spain,UM003,particles/cm³,2723.1111043294272
+Sri Lanka,PM2.5,µg/m³,50.0
+"Sudan, The Republic of",PM2.5,µg/m³,-658.3333333333334
+Sweden,CO,µg/m³,171.16666666666666
+Sweden,NO2,µg/m³,12.918388467102803
+Sweden,O3,µg/m³,59.64465777755556
+Sweden,PM10,µg/m³,31.841381809523806
+Sweden,PM2.5,µg/m³,18.807094188648648
+Sweden,SO2,µg/m³,-0.477538
+Switzerland,CO,µg/m³,204.79999999999998
+Switzerland,NO2,µg/m³,16.164245454545455
+Switzerland,O3,µg/m³,62.90028125
+Switzerland,PM1,µg/m³,7.492807522416115
+Switzerland,PM10,µg/m³,8.127190168861869
+Switzerland,PM2.5,µg/m³,3.521533883084089
+Switzerland,RELATIVEHUMIDITY,%,59.99289215935602
+Switzerland,SO2,µg/m³,0.8247875
+Switzerland,TEMPERATURE,c,8.231254908773634
+Switzerland,UM003,particles/cm³,313.464783138699
+"Taiwan, China",PM10,µg/m³,25.402439024390244
+"Taiwan, China",PM2.5,µg/m³,11.670731707317072
+Tajikistan,PM2.5,µg/m³,14.0
+Thailand,PM1,µg/m³,40.86883504212308
+Thailand,PM10,µg/m³,53.83746569039885
+Thailand,PM2.5,µg/m³,39.557863564558524
+Thailand,RELATIVEHUMIDITY,%,49.87391320296696
+Thailand,TEMPERATURE,c,32.10878244764877
+Thailand,UM003,particles/cm³,10650.371474493117
+Trinidad and Tobago,CO,µg/m³,546.525056355745
+Trinidad and Tobago,NO2,µg/m³,7.34196771455474
+Trinidad and Tobago,O3,µg/m³,15.785762725988693
+Trinidad and Tobago,PM10,µg/m³,22.480000000000004
+Trinidad and Tobago,PM2.5,µg/m³,5.011111111111108
+Trinidad and Tobago,SO2,µg/m³,2.075993853427899
+Turkey,CO,µg/m³,132445.77806493506
+Turkey,NO2,µg/m³,36.16143030303031
+Turkey,O3,µg/m³,51.26118859649122
+Turkey,PM10,µg/m³,46.64285378590078
+Turkey,PM2.5,µg/m³,18.201605714285716
+Turkey,SO2,µg/m³,18.638112391930836
+Turkmenistan,PM2.5,µg/m³,-999.0
+USSR,PM2.5,µg/m³,23.0
+Uganda,PM2.5,µg/m³,-999.0
+United Arab Emirates,CO,µg/m³,306.6666666666667
+United Arab Emirates,NO2,µg/m³,9.185555555555556
+United Arab Emirates,O3,µg/m³,48.20230769230769
+United Arab Emirates,PM10,µg/m³,247.72222222222223
+United Arab Emirates,PM2.5,µg/m³,-204.2
+United Arab Emirates,SO2,µg/m³,9.10888888888889
+United Kingdom,CO,µg/m³,276.6666666666667
+United Kingdom,NO2,µg/m³,30.22128205128205
+United Kingdom,O3,µg/m³,44.232654867256635
+United Kingdom,PM1,µg/m³,21.441539888028746
+United Kingdom,PM10,µg/m³,23.199925129331394
+United Kingdom,PM2.5,µg/m³,17.673730083896267
+United Kingdom,RELATIVEHUMIDITY,%,67.94662373860677
+United Kingdom,SO2,µg/m³,1.9522857142857142
+United Kingdom,TEMPERATURE,c,14.63237106402715
+United Kingdom,UM003,particles/cm³,5030.083231608072
+United States,BC,µg/m³,0.42275862068965514
+United States,NO,ppm,0.0019236254224112824
+United States,NOX,ppm,0.006968911917098445
+United States,PM10,µg/m³,22.982866043613708
+United States,PM2.5,µg/m³,8.994352941176471
+Uzbekistan,PM2.5,µg/m³,14.0
+Viet Nam,PM2.5,µg/m³,26.0
