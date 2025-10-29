@@ -1,0 +1,3 @@
+Check for missing data.
+Impute if possible, else leave NA
+
