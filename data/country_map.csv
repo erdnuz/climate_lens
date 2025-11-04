@@ -1,235 +1,235 @@
-CCA3,Country/Territory
-AFG,Afghanistan
-ALB,Albania
-DZA,Algeria
-ASM,American Samoa
-AND,Andorra
-AGO,Angola
-AIA,Anguilla
-ATG,Antigua and Barbuda
-ARG,Argentina
-ARM,Armenia
-ABW,Aruba
-AUS,Australia
-AUT,Austria
-AZE,Azerbaijan
-BHS,Bahamas
-BHR,Bahrain
-BGD,Bangladesh
-BRB,Barbados
-BLR,Belarus
-BEL,Belgium
-BLZ,Belize
-BEN,Benin
-BMU,Bermuda
-BTN,Bhutan
-BOL,Bolivia
-BIH,Bosnia and Herzegovina
-BWA,Botswana
-BRA,Brazil
-VGB,British Virgin Islands
-BRN,Brunei
-BGR,Bulgaria
-BFA,Burkina Faso
-BDI,Burundi
-KHM,Cambodia
-CMR,Cameroon
-CAN,Canada
-CPV,Cape Verde
-CYM,Cayman Islands
-CAF,Central African Republic
-TCD,Chad
-CHL,Chile
-CHN,China
-COL,Colombia
-COM,Comoros
-COK,Cook Islands
-CRI,Costa Rica
-HRV,Croatia
-CUB,Cuba
-CUW,Curacao
-CYP,Cyprus
-CZE,Czech Republic
-DNK,Denmark
-DJI,Djibouti
-DMA,Dominica
-DOM,Dominican Republic
-COD,DR Congo
-ECU,Ecuador
-EGY,Egypt
-SLV,El Salvador
-GNQ,Equatorial Guinea
-ERI,Eritrea
-EST,Estonia
-SWZ,Eswatini
-ETH,Ethiopia
-FLK,Falkland Islands
-FRO,Faroe Islands
-FJI,Fiji
-FIN,Finland
-FRA,France
-GUF,French Guiana
-PYF,French Polynesia
-GAB,Gabon
-GMB,Gambia
-GEO,Georgia
-DEU,Germany
-GHA,Ghana
-GIB,Gibraltar
-GRC,Greece
-GRL,Greenland
-GRD,Grenada
-GLP,Guadeloupe
-GUM,Guam
-GTM,Guatemala
-GGY,Guernsey
-GIN,Guinea
-GNB,Guinea-Bissau
-GUY,Guyana
-HTI,Haiti
-HND,Honduras
-HKG,Hong Kong
-HUN,Hungary
-ISL,Iceland
-IND,India
-IDN,Indonesia
-IRN,Iran
-IRQ,Iraq
-IRL,Ireland
-IMN,Isle of Man
-ISR,Israel
-ITA,Italy
-CIV,Ivory Coast
-JAM,Jamaica
-JPN,Japan
-JEY,Jersey
-JOR,Jordan
-KAZ,Kazakhstan
-KEN,Kenya
-KIR,Kiribati
-KWT,Kuwait
-KGZ,Kyrgyzstan
-LAO,Laos
-LVA,Latvia
-LBN,Lebanon
-LSO,Lesotho
-LBR,Liberia
-LBY,Libya
-LIE,Liechtenstein
-LTU,Lithuania
-LUX,Luxembourg
-MAC,Macau
-MDG,Madagascar
-MWI,Malawi
-MYS,Malaysia
-MDV,Maldives
-MLI,Mali
-MLT,Malta
-MHL,Marshall Islands
-MTQ,Martinique
-MRT,Mauritania
-MUS,Mauritius
-MYT,Mayotte
-MEX,Mexico
-FSM,Micronesia
-MDA,Moldova
-MCO,Monaco
-MNG,Mongolia
-MNE,Montenegro
-MSR,Montserrat
-MAR,Morocco
-MOZ,Mozambique
-MMR,Myanmar
-NAM,Namibia
-NRU,Nauru
-NPL,Nepal
-NLD,Netherlands
-NCL,New Caledonia
-NZL,New Zealand
-NIC,Nicaragua
-NER,Niger
-NGA,Nigeria
-NIU,Niue
-PRK,North Korea
-MKD,North Macedonia
-NFK,Northern Mariana Islands
-NOR,Norway
-OMN,Oman
-PAK,Pakistan
-PLW,Palau
-PSE,Palestine
-PAN,Panama
-PNG,Papua New Guinea
-PRY,Paraguay
-PER,Peru
-PHL,Philippines
-POL,Poland
-PRT,Portugal
-PRI,Puerto Rico
-QAT,Qatar
-COG,Republic of the Congo
-REU,Reunion
-ROU,Romania
-RUS,Russia
-RWA,Rwanda
-BLM,Saint Barthelemy
-KNA,Saint Kitts and Nevis
-LCA,Saint Lucia
-MAF,Saint Martin
-SPM,Saint Pierre and Miquelon
-VCT,Saint Vincent and the Grenadines
-WSM,Samoa
-SMR,San Marino
-STP,Sao Tome and Principe
-SAU,Saudi Arabia
-SEN,Senegal
-SRB,Serbia
-SYC,Seychelles
-SLE,Sierra Leone
-SGP,Singapore
-SXM,Sint Maarten
-SVK,Slovakia
-SVN,Slovenia
-SLB,Solomon Islands
-SOM,Somalia
-ZAF,South Africa
-KOR,South Korea
-SSD,South Sudan
-ESP,Spain
-LKA,Sri Lanka
-SDN,Sudan
-SUR,Suriname
-SWE,Sweden
-CHE,Switzerland
-SYR,Syria
-TWN,Taiwan
-TJK,Tajikistan
-TZA,Tanzania
-THA,Thailand
-TLS,Timor-Leste
-TGO,Togo
-TKL,Tokelau
-TON,Tonga
-TTO,Trinidad and Tobago
-TUN,Tunisia
-TUR,Turkey
-TKM,Turkmenistan
-TCA,Turks and Caicos Islands
-TUV,Tuvalu
-UGA,Uganda
-UKR,Ukraine
-ARE,United Arab Emirates
-GBR,United Kingdom
-USA,United States
-VIR,United States Virgin Islands
-URY,Uruguay
-UZB,Uzbekistan
-VUT,Vanuatu
-VAT,Vatican City
-VEN,Venezuela
-VNM,Vietnam
-WLF,Wallis and Futuna
-ESH,Western Sahara
-YEM,Yemen
-ZMB,Zambia
-ZWE,Zimbabwe
+country_code,country_name,region,sub_region,region_code,sub_region_code
+AFG,Afghanistan,Asia,Southern Asia,142.0,34.0
+ALB,Albania,Europe,Southern Europe,150.0,39.0
+DZA,Algeria,Africa,Northern Africa,2.0,15.0
+ASM,American Samoa,Oceania,Polynesia,9.0,61.0
+AND,Andorra,Europe,Southern Europe,150.0,39.0
+AGO,Angola,Africa,Middle Africa,2.0,17.0
+AIA,Anguilla,Americas,Caribbean,19.0,29.0
+ATG,Antigua and Barbuda,Americas,Caribbean,19.0,29.0
+ARG,Argentina,Americas,South America,19.0,5.0
+ARM,Armenia,Asia,Western Asia,142.0,145.0
+ABW,Aruba,Americas,Caribbean,19.0,29.0
+AUS,Australia,Oceania,Australia and New Zealand,9.0,53.0
+AUT,Austria,Europe,Western Europe,150.0,155.0
+AZE,Azerbaijan,Asia,Western Asia,142.0,145.0
+BHS,Bahamas,Americas,Caribbean,19.0,29.0
+BHR,Bahrain,Asia,Western Asia,142.0,145.0
+BGD,Bangladesh,Asia,Southern Asia,142.0,34.0
+BRB,Barbados,Americas,Caribbean,19.0,29.0
+BLR,Belarus,Europe,Eastern Europe,150.0,151.0
+BEL,Belgium,Europe,Western Europe,150.0,155.0
+BLZ,Belize,Americas,Central America,19.0,13.0
+BEN,Benin,Africa,Western Africa,2.0,11.0
+BMU,Bermuda,Americas,Northern America,19.0,21.0
+BTN,Bhutan,Asia,Southern Asia,142.0,34.0
+BOL,Bolivia,Americas,South America,19.0,5.0
+BIH,Bosnia and Herzegovina,Europe,Southern Europe,150.0,39.0
+BWA,Botswana,Africa,Southern Africa,2.0,18.0
+BRA,Brazil,Americas,South America,19.0,5.0
+VGB,British Virgin Islands,Americas,Caribbean,19.0,29.0
+BRN,Brunei,Asia,South-Eastern Asia,142.0,35.0
+BGR,Bulgaria,Europe,Eastern Europe,150.0,151.0
+BFA,Burkina Faso,Africa,Western Africa,2.0,11.0
+BDI,Burundi,Africa,Eastern Africa,2.0,14.0
+KHM,Cambodia,Asia,South-Eastern Asia,142.0,35.0
+CMR,Cameroon,Africa,Middle Africa,2.0,17.0
+CAN,Canada,Americas,Northern America,19.0,21.0
+CPV,Cape Verde,Africa,Western Africa,2.0,11.0
+CYM,Cayman Islands,Americas,Caribbean,19.0,29.0
+CAF,Central African Republic,Africa,Middle Africa,2.0,17.0
+TCD,Chad,Africa,Middle Africa,2.0,17.0
+CHL,Chile,Americas,South America,19.0,5.0
+CHN,China,Asia,Eastern Asia,142.0,30.0
+COL,Colombia,Americas,South America,19.0,5.0
+COM,Comoros,Africa,Eastern Africa,2.0,14.0
+COK,Cook Islands,Oceania,Polynesia,9.0,61.0
+CRI,Costa Rica,Americas,Central America,19.0,13.0
+HRV,Croatia,Europe,Southern Europe,150.0,39.0
+CUB,Cuba,Americas,Caribbean,19.0,29.0
+CUW,Curacao,Americas,Caribbean,19.0,29.0
+CYP,Cyprus,Asia,Western Asia,142.0,145.0
+CZE,Czech Republic,Europe,Eastern Europe,150.0,151.0
+DNK,Denmark,Europe,Northern Europe,150.0,154.0
+DJI,Djibouti,Africa,Eastern Africa,2.0,14.0
+DMA,Dominica,Americas,Caribbean,19.0,29.0
+DOM,Dominican Republic,Americas,Caribbean,19.0,29.0
+COD,DR Congo,Africa,Middle Africa,2.0,17.0
+ECU,Ecuador,Americas,South America,19.0,5.0
+EGY,Egypt,Africa,Northern Africa,2.0,15.0
+SLV,El Salvador,Americas,Central America,19.0,13.0
+GNQ,Equatorial Guinea,Africa,Middle Africa,2.0,17.0
+ERI,Eritrea,Africa,Eastern Africa,2.0,14.0
+EST,Estonia,Europe,Northern Europe,150.0,154.0
+SWZ,Eswatini,Africa,Southern Africa,2.0,18.0
+ETH,Ethiopia,Africa,Eastern Africa,2.0,14.0
+FLK,Falkland Islands,Americas,South America,19.0,5.0
+FRO,Faroe Islands,Europe,Northern Europe,150.0,154.0
+FJI,Fiji,Oceania,Melanesia,9.0,54.0
+FIN,Finland,Europe,Northern Europe,150.0,154.0
+FRA,France,Europe,Western Europe,150.0,155.0
+GUF,French Guiana,Americas,South America,19.0,5.0
+PYF,French Polynesia,Oceania,Polynesia,9.0,61.0
+GAB,Gabon,Africa,Middle Africa,2.0,17.0
+GMB,Gambia,Africa,Western Africa,2.0,11.0
+GEO,Georgia,Asia,Western Asia,142.0,145.0
+DEU,Germany,Europe,Western Europe,150.0,155.0
+GHA,Ghana,Africa,Western Africa,2.0,11.0
+GIB,Gibraltar,Europe,Southern Europe,150.0,39.0
+GRC,Greece,Europe,Southern Europe,150.0,39.0
+GRL,Greenland,Americas,Northern America,19.0,21.0
+GRD,Grenada,Americas,Caribbean,19.0,29.0
+GLP,Guadeloupe,Americas,Caribbean,19.0,29.0
+GUM,Guam,Oceania,Micronesia,9.0,57.0
+GTM,Guatemala,Americas,Central America,19.0,13.0
+GGY,Guernsey,Europe,Northern Europe,150.0,154.0
+GIN,Guinea,Africa,Western Africa,2.0,11.0
+GNB,Guinea-Bissau,Africa,Western Africa,2.0,11.0
+GUY,Guyana,Americas,South America,19.0,5.0
+HTI,Haiti,Americas,Caribbean,19.0,29.0
+HND,Honduras,Americas,Central America,19.0,13.0
+HKG,Hong Kong,Asia,Eastern Asia,142.0,30.0
+HUN,Hungary,Europe,Eastern Europe,150.0,151.0
+ISL,Iceland,Europe,Northern Europe,150.0,154.0
+IND,India,Asia,Southern Asia,142.0,34.0
+IDN,Indonesia,Asia,South-Eastern Asia,142.0,35.0
+IRN,Iran,Asia,Southern Asia,142.0,34.0
+IRQ,Iraq,Asia,Western Asia,142.0,145.0
+IRL,Ireland,Europe,Northern Europe,150.0,154.0
+IMN,Isle of Man,Europe,Northern Europe,150.0,154.0
+ISR,Israel,Asia,Western Asia,142.0,145.0
+ITA,Italy,Europe,Southern Europe,150.0,39.0
+CIV,Ivory Coast,Africa,Western Africa,2.0,11.0
+JAM,Jamaica,Americas,Caribbean,19.0,29.0
+JPN,Japan,Asia,Eastern Asia,142.0,30.0
+JEY,Jersey,Europe,Northern Europe,150.0,154.0
+JOR,Jordan,Asia,Western Asia,142.0,145.0
+KAZ,Kazakhstan,Asia,Central Asia,142.0,143.0
+KEN,Kenya,Africa,Eastern Africa,2.0,14.0
+KIR,Kiribati,Oceania,Micronesia,9.0,57.0
+KWT,Kuwait,Asia,Western Asia,142.0,145.0
+KGZ,Kyrgyzstan,Asia,Central Asia,142.0,143.0
+LAO,Laos,Asia,South-Eastern Asia,142.0,35.0
+LVA,Latvia,Europe,Northern Europe,150.0,154.0
+LBN,Lebanon,Asia,Western Asia,142.0,145.0
+LSO,Lesotho,Africa,Southern Africa,2.0,18.0
+LBR,Liberia,Africa,Western Africa,2.0,11.0
+LBY,Libya,Africa,Northern Africa,2.0,15.0
+LIE,Liechtenstein,Europe,Western Europe,150.0,155.0
+LTU,Lithuania,Europe,Northern Europe,150.0,154.0
+LUX,Luxembourg,Europe,Western Europe,150.0,155.0
+MAC,Macau,Asia,Eastern Asia,142.0,30.0
+MDG,Madagascar,Africa,Eastern Africa,2.0,14.0
+MWI,Malawi,Africa,Eastern Africa,2.0,14.0
+MYS,Malaysia,Asia,South-Eastern Asia,142.0,35.0
+MDV,Maldives,Asia,Southern Asia,142.0,34.0
+MLI,Mali,Africa,Western Africa,2.0,11.0
+MLT,Malta,Europe,Southern Europe,150.0,39.0
+MHL,Marshall Islands,Oceania,Micronesia,9.0,57.0
+MTQ,Martinique,Americas,Caribbean,19.0,29.0
+MRT,Mauritania,Africa,Western Africa,2.0,11.0
+MUS,Mauritius,Africa,Eastern Africa,2.0,14.0
+MYT,Mayotte,Africa,Eastern Africa,2.0,14.0
+MEX,Mexico,Americas,Central America,19.0,13.0
+FSM,Micronesia,Oceania,Micronesia,9.0,57.0
+MDA,Moldova,Europe,Eastern Europe,150.0,151.0
+MCO,Monaco,Europe,Western Europe,150.0,155.0
+MNG,Mongolia,Asia,Eastern Asia,142.0,30.0
+MNE,Montenegro,Europe,Southern Europe,150.0,39.0
+MSR,Montserrat,Americas,Caribbean,19.0,29.0
+MAR,Morocco,Africa,Northern Africa,2.0,15.0
+MOZ,Mozambique,Africa,Eastern Africa,2.0,14.0
+MMR,Myanmar,Asia,South-Eastern Asia,142.0,35.0
+NAM,Namibia,Africa,Southern Africa,2.0,18.0
+NRU,Nauru,Oceania,Micronesia,9.0,57.0
+NPL,Nepal,Asia,Southern Asia,142.0,34.0
+NLD,Netherlands,Europe,Western Europe,150.0,155.0
+NCL,New Caledonia,Oceania,Melanesia,9.0,54.0
+NZL,New Zealand,Oceania,Australia and New Zealand,9.0,53.0
+NIC,Nicaragua,Americas,Central America,19.0,13.0
+NER,Niger,Africa,Western Africa,2.0,11.0
+NGA,Nigeria,Africa,Western Africa,2.0,11.0
+NIU,Niue,Oceania,Polynesia,9.0,61.0
+PRK,North Korea,Asia,Eastern Asia,142.0,30.0
+MKD,North Macedonia,Europe,Southern Europe,150.0,39.0
+NFK,Northern Mariana Islands,Oceania,Australia and New Zealand,9.0,53.0
+NOR,Norway,Europe,Northern Europe,150.0,154.0
+OMN,Oman,Asia,Western Asia,142.0,145.0
+PAK,Pakistan,Asia,Southern Asia,142.0,34.0
+PLW,Palau,Oceania,Micronesia,9.0,57.0
+PSE,Palestine,Asia,Western Asia,142.0,145.0
+PAN,Panama,Americas,Central America,19.0,13.0
+PNG,Papua New Guinea,Oceania,Melanesia,9.0,54.0
+PRY,Paraguay,Americas,South America,19.0,5.0
+PER,Peru,Americas,South America,19.0,5.0
+PHL,Philippines,Asia,South-Eastern Asia,142.0,35.0
+POL,Poland,Europe,Eastern Europe,150.0,151.0
+PRT,Portugal,Europe,Southern Europe,150.0,39.0
+PRI,Puerto Rico,Americas,Caribbean,19.0,29.0
+QAT,Qatar,Asia,Western Asia,142.0,145.0
+COG,Republic of the Congo,Africa,Middle Africa,2.0,17.0
+REU,Reunion,Africa,Eastern Africa,2.0,14.0
+ROU,Romania,Europe,Eastern Europe,150.0,151.0
+RUS,Russia,Europe,Eastern Europe,150.0,151.0
+RWA,Rwanda,Africa,Eastern Africa,2.0,14.0
+BLM,Saint Barthelemy,Americas,Caribbean,19.0,29.0
+KNA,Saint Kitts and Nevis,Americas,Caribbean,19.0,29.0
+LCA,Saint Lucia,Americas,Caribbean,19.0,29.0
+MAF,Saint Martin,Americas,Caribbean,19.0,29.0
+SPM,Saint Pierre and Miquelon,Americas,Northern America,19.0,21.0
+VCT,Saint Vincent and the Grenadines,Americas,Caribbean,19.0,29.0
+WSM,Samoa,Oceania,Polynesia,9.0,61.0
+SMR,San Marino,Europe,Southern Europe,150.0,39.0
+STP,Sao Tome and Principe,Africa,Middle Africa,2.0,17.0
+SAU,Saudi Arabia,Asia,Western Asia,142.0,145.0
+SEN,Senegal,Africa,Western Africa,2.0,11.0
+SRB,Serbia,Europe,Southern Europe,150.0,39.0
+SYC,Seychelles,Africa,Eastern Africa,2.0,14.0
+SLE,Sierra Leone,Africa,Western Africa,2.0,11.0
+SGP,Singapore,Asia,South-Eastern Asia,142.0,35.0
+SXM,Sint Maarten,Americas,Caribbean,19.0,29.0
+SVK,Slovakia,Europe,Eastern Europe,150.0,151.0
+SVN,Slovenia,Europe,Southern Europe,150.0,39.0
+SLB,Solomon Islands,Oceania,Melanesia,9.0,54.0
+SOM,Somalia,Africa,Eastern Africa,2.0,14.0
+ZAF,South Africa,Africa,Southern Africa,2.0,18.0
+KOR,South Korea,Asia,Eastern Asia,142.0,30.0
+SSD,South Sudan,Africa,Eastern Africa,2.0,14.0
+ESP,Spain,Europe,Southern Europe,150.0,39.0
+LKA,Sri Lanka,Asia,Southern Asia,142.0,34.0
+SDN,Sudan,Africa,Northern Africa,2.0,15.0
+SUR,Suriname,Americas,South America,19.0,5.0
+SWE,Sweden,Europe,Northern Europe,150.0,154.0
+CHE,Switzerland,Europe,Western Europe,150.0,155.0
+SYR,Syria,Asia,Western Asia,142.0,145.0
+TWN,Taiwan,Asia,Eastern Asia,142.0,30.0
+TJK,Tajikistan,Asia,Central Asia,142.0,143.0
+TZA,Tanzania,Africa,Eastern Africa,2.0,14.0
+THA,Thailand,Asia,South-Eastern Asia,142.0,35.0
+TLS,Timor-Leste,Asia,South-Eastern Asia,142.0,35.0
+TGO,Togo,Africa,Western Africa,2.0,11.0
+TKL,Tokelau,Oceania,Polynesia,9.0,61.0
+TON,Tonga,Oceania,Polynesia,9.0,61.0
+TTO,Trinidad and Tobago,Americas,Caribbean,19.0,29.0
+TUN,Tunisia,Africa,Northern Africa,2.0,15.0
+TUR,Turkey,Asia,Western Asia,142.0,145.0
+TKM,Turkmenistan,Asia,Central Asia,142.0,143.0
+TCA,Turks and Caicos Islands,Americas,Caribbean,19.0,29.0
+TUV,Tuvalu,Oceania,Polynesia,9.0,61.0
+UGA,Uganda,Africa,Eastern Africa,2.0,14.0
+UKR,Ukraine,Europe,Eastern Europe,150.0,151.0
+ARE,United Arab Emirates,Asia,Western Asia,142.0,145.0
+GBR,United Kingdom,Europe,Northern Europe,150.0,154.0
+USA,United States,Americas,Northern America,19.0,21.0
+VIR,United States Virgin Islands,Americas,Caribbean,19.0,29.0
+URY,Uruguay,Americas,South America,19.0,5.0
+UZB,Uzbekistan,Asia,Central Asia,142.0,143.0
+VUT,Vanuatu,Oceania,Melanesia,9.0,54.0
+VAT,Vatican City,Europe,Southern Europe,150.0,39.0
+VEN,Venezuela,Americas,South America,19.0,5.0
+VNM,Vietnam,Asia,South-Eastern Asia,142.0,35.0
+WLF,Wallis and Futuna,Oceania,Polynesia,9.0,61.0
+ESH,Western Sahara,Africa,Northern Africa,2.0,15.0
+YEM,Yemen,Asia,Western Asia,142.0,145.0
+ZMB,Zambia,Africa,Eastern Africa,2.0,14.0
+ZWE,Zimbabwe,Africa,Eastern Africa,2.0,14.0
