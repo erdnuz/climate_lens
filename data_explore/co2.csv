@@ -1,4 +1,4 @@
-country_code,year,value,co2_per_capita
+country_code,year,co2,co2_per_capita
 ABW,1970,16655.514,0.2817905796365851
 ABW,1971,14495.651,0.2439437683959335
 ABW,1972,14055.611,0.23528681814986058

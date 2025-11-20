@@ -20,7 +20,7 @@ co2 = co2.merge(countries, on="country_code", how="left")
 
 all_countries = sorted(co2["country_name"].unique())
 metric_labels = {
-    "value": "CO₂ Total (T)",
+    "co2": "CO₂ Total (T)",
     "co2_per_capita": "CO₂ per Capita (T)",
     "temp_min": "Yearly Minimum Temperature (°C)",
     "temp_max": "Yearly Maximum Temperature (°C)",
@@ -37,20 +37,20 @@ climate_yearly = climate.groupby("year").agg({
 # Compute most recent year
 latest_year = co2["year"].max()
 prev_year = latest_year - 1
-co2["population"] = co2["value"] / co2["co2_per_capita"]
+co2["population"] = co2["co2"] / co2["co2_per_capita"]
 
 # Latest year
 co2_latest = co2[co2["year"] == latest_year]
 co2_prev = co2[co2["year"] == prev_year]
 
 # Global Avg CO2 per Capita
-co2_pc_latest = co2_latest["value"].sum() / co2_latest["population"].sum()
-co2_pc_prev = co2_prev["value"].sum() / co2_prev["population"].sum()
+co2_pc_latest = co2_latest["co2"].sum() / co2_latest["population"].sum()
+co2_pc_prev = co2_prev["co2"].sum() / co2_prev["population"].sum()
 co2_pc_trend = ((co2_pc_latest - co2_pc_prev) / co2_pc_prev * 100) if co2_pc_prev else 0
 
 # Total CO2
-co2_total_latest = co2_latest["value"].sum()
-co2_total_prev = co2_prev["value"].sum()
+co2_total_latest = co2_latest["co2"].sum()
+co2_total_prev = co2_prev["co2"].sum()
 co2_total_trend = ((co2_total_latest - co2_total_prev) / co2_total_prev * 100) if co2_total_prev else 0
 
 # Global Avg Max Temperature
@@ -73,7 +73,7 @@ def aggregate_by_subregion():
     # CO2: latest year
     co2_latest = co2[co2["year"] == latest_year_co2]
     co2_grouped = co2_latest.groupby("sub_region").agg({
-        "value": "mean",
+        "co2": "mean",
         "co2_per_capita": "mean"
     }).reset_index()
 
@@ -101,7 +101,7 @@ def aggregate_by_subregion():
     df = df.merge(aq_grouped, on="sub_region", how="outer")
 
     df['co2_per_capita'] = df['co2_per_capita'] * 1000
-    df['value'] = df['value'] / 1000
+    df['co2'] = df['co2'] / 1000
     
     # Round numeric columns to 2 decimals
     for col in df.columns:
@@ -113,7 +113,7 @@ def aggregate_by_subregion():
     # Rename columns for display
     df = df.rename(columns={
         "sub_region": "Sub-Region",
-        "value": "CO₂ Total (Mt)",
+        "co2": "CO₂ Total (Mt)",
         "co2_per_capita": "CO₂ per Capita (T)",
         "temp_min": "Min Temp (°C)",
         "temp_max": "Max Temp (°C)",
@@ -226,7 +226,7 @@ app.layout = html.Div(style=dark_style, children=[
             dcc.Dropdown(
                 id='metric-dropdown',
                 options=[{'label': v, 'value': k} for k, v in metric_labels.items()],
-                value='value',
+                value='co2',
                 clearable=False,
                 style=dropdown_style
             ),
@@ -310,9 +310,9 @@ html.Div(style={'display': 'flex', 'gap': '20px', 'margin-bottom': '20px', 'just
                     {'label': 'PM10', 'value': 'PM10'},
                     {'label': 'Annual Rainfall', 'value': 'R1'},
                     {'label': 'CO₂ per Capita', 'value': 'co2_per_capita'},
-                    {'label': 'Total CO₂', 'value': 'value'}
+                    {'label': 'Total CO₂', 'value': 'co2'}
                 ],
-                value='value',
+                value='co2',
                 clearable=False,
                 style=dropdown_style
             )
@@ -360,7 +360,7 @@ def update_ts(selected_countries, selected_metric):
     fig = go.Figure()
 
     for country in selected_countries:
-        if selected_metric in ["value", "co2_per_capita"]:
+        if selected_metric in ["co2", "co2_per_capita"]:
             # CO2 metrics per country
             d = co2[co2["country_name"] == country].sort_values("year")
 
@@ -422,7 +422,7 @@ def update_ts(selected_countries, selected_metric):
         yaxis_title=metric_labels[selected_metric]
     )
 
-    if selected_metric in ["value", "co2_per_capita"]:
+    if selected_metric in ["co2", "co2_per_capita"]:
         fig.update_layout(
         xaxis=dict(
             range=[2005, 2027]
@@ -442,14 +442,14 @@ def update_pie(metric):
     df_last5 = co2[(co2["year"] >= first_year) & (co2["year"] <= last_year)]
     
     # Compute mean CO₂ per country
-    df_mean = df_last5.groupby("country_name")["value"].mean().reset_index()
+    df_mean = df_last5.groupby("country_name")["co2"].mean().reset_index()
     
     # Sort top 5
-    df_top5 = df_mean.nlargest(5, "value")
+    df_top5 = df_mean.nlargest(5, "co2")
     
     # Aggregate the rest as 'Other'
-    other_mean = df_mean[~df_mean["country_name"].isin(df_top5["country_name"])]["value"].sum()
-    df_pie = pd.concat([df_top5, pd.DataFrame({"country_name": ["Other"], "value": [other_mean]})], ignore_index=True)
+    other_mean = df_mean[~df_mean["country_name"].isin(df_top5["country_name"])]["co2"].sum()
+    df_pie = pd.concat([df_top5, pd.DataFrame({"country_name": ["Other"], "co2": [other_mean]})], ignore_index=True)
     
     # Gradient colors
     colors = ['#4aa8ff', '#2f72c4', '#1c4f8c', '#14365e', '#0b1f33', '#050a19']  # example gradient
@@ -457,7 +457,7 @@ def update_pie(metric):
     
     fig = go.Figure(go.Pie(
         labels=df_pie["country_name"],
-        values=df_pie["value"],
+        values=df_pie["co2"],
         hole=0.3,
         marker=dict(colors=colors),
         textinfo='label',          # show names on chart
@@ -496,11 +496,11 @@ def update_top10(metric, order):
     latest_year_aq = aq["year"].max() if "year" in aq.columns else None
 
     # Select the correct dataframe
-    if metric in ["value", "co2_per_capita"]:
+    if metric in ["co2", "co2_per_capita"]:
         df_latest = co2[co2["year"] == latest_year_co2].copy()
         if metric == "co2_per_capita":
-            df_latest["population"] = df_latest["value"] / df_latest["co2_per_capita"]
-            df_latest["co2_per_capita"] = df_latest["value"] / df_latest["population"]
+            df_latest["population"] = df_latest["co2"] / df_latest["co2_per_capita"]
+            df_latest["co2_per_capita"] = df_latest["co2"] / df_latest["population"]
     elif metric in ["temp_max", "temp_min", "R1"]:
         df_latest = climate[climate["year"] == latest_year_climate].copy()
     else:

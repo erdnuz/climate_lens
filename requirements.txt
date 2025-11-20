@@ -1,7 +1,10 @@
+# Core (Dashboard display)
+dash
 pandas
+plotly
+
+# Preprocessing and Imputation
 numpy
 matplotlib
 kagglehub
-plotly
 nbformat
-dash
