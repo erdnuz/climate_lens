@@ -4,3 +4,4 @@ matplotlib
 kagglehub
 plotly
 nbformat
+dash

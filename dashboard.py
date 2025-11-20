@@ -20,8 +20,8 @@ co2 = co2.merge(countries, on="country_code", how="left")
 
 all_countries = sorted(co2["country_name"].unique())
 metric_labels = {
-    "value": "CO₂ Total (Mt)",
-    "co2_per_capita": "CO₂ per Capita (t/person)",
+    "value": "CO₂ Total (T)",
+    "co2_per_capita": "CO₂ per Capita (T)",
     "temp_min": "Yearly Minimum Temperature (°C)",
     "temp_max": "Yearly Maximum Temperature (°C)",
     "R1": "Annual Average Rainfall (mm)"
@@ -128,7 +128,7 @@ def aggregate_by_subregion():
 subregion_df = aggregate_by_subregion()
 table = dash_table.DataTable(
     columns=[{"name": col, "id": col, "type": "numeric"} if col != "Sub-Region" else {"name": col, "id": col} for col in subregion_df.columns],
-    data=subregion_df.to_dict('records'),
+    data=subregion_df.fillna("-").to_dict('records'),
     sort_action="native",
     style_header={
         'backgroundColor': '#1a1d24',
@@ -158,7 +158,7 @@ table = dash_table.DataTable(
 # Initialize Dash app
 # ------------------------------
 app = Dash(__name__)
-app.title = "Environmental Dashboard"
+app.title = "Climate Lens"
 
 # ------------------------------
 # Dark theme layout
@@ -192,7 +192,7 @@ app.layout = html.Div(style=dark_style, children=[
     html.Div(style={'display': 'flex', 'gap': '20px', 'margin-bottom': '20px', 'justify-content': 'center'}, children=[
         html.Div(style={'background': '#1a1d24', 'padding': '20px', 'border-radius': '8px',
                         'text-align': 'center', 'border': '1px solid #1f2937', 'flex': '1'}, children=[
-            "Global Avg CO₂ per Capita", html.Br(), html.B(f"{(co2_pc_latest*1e3):.2f} T"),
+            "Global CO₂ per Capita", html.Br(), html.B(f"{(co2_pc_latest*1e3):.2f} T"),
             html.Br(), html.Span(f"Trend: {co2_pc_trend:+.2f}%", style={'color': "#9b9b9b"})
         ]),
         html.Div(style={'background': '#1a1d24', 'padding': '20px', 'border-radius': '8px',
@@ -210,55 +210,95 @@ app.layout = html.Div(style=dark_style, children=[
     # ------------------------------
     # Row 1: Time series & AQ choropleth
     # ------------------------------
-    html.Div(style={'display': 'flex', 'gap': '20px', 'margin-bottom': '20px', 'justify-content': 'center'}, children=[
-        html.Div(style={'flex': '1', 'min-width': '300px', 'max-width': '600px', 'background': '#1a1d24',
+    html.Div(style={'display': 'flex', 'gap': '20px', 'margin-bottom': '20px', 'justify-content': 'center', 'background': '#1a1d24',
                         'padding': '10px', 'border-radius': '8px', 'border': '1px solid #1f2937'}, children=[
+        html.Div(style={'flex': '1', 'min-width': '300px', 'max-width': '700px', }, children=[
             html.Label("Select countries:", style={'color': '#e0e6ed'}),
             dcc.Dropdown(
                 id='country-dropdown',
                 options=[{'label': c, 'value': c} for c in all_countries],
                 value=["Canada", "United States"],
                 multi=True,
-                style=dropdown_style
+                style=dropdown_style,
+                clearable=False,
             ),
             html.Label("Select metric:", style={'color': '#e0e6ed', 'margin-top': '10px'}),
             dcc.Dropdown(
                 id='metric-dropdown',
                 options=[{'label': v, 'value': k} for k, v in metric_labels.items()],
                 value='value',
+                clearable=False,
                 style=dropdown_style
             ),
-            dcc.Graph(id='ts-graph', style={'height': '500px', 'margin-top': '10px'})
+            dcc.Graph(
+                id='ts-graph', 
+                style={'height': '400px', 'margin-top': '10px'}, 
+                config={
+                "displayModeBar": True,
+                "displaylogo": False,
+                "modeBarButtonsToRemove": [
+                    "select2d",
+                    "lasso2d",
+                    "autoScale2d",
+                    "toggleSpikelines",
+                    "hoverClosestCartesian",
+                    "hoverCompareCartesian",
+                    "toImage", 
+                    "zoom2d",
+                ],
+                "modeBarButtonsToAdd": [
+                    "pan2d",
+
+                ],
+            }),
         ]),
-        html.Div(style={'flex': '1', 'min-width': '300px', 'max-width': '600px', 'background': '#1a1d24',
-                        'padding': '10px', 'border-radius': '8px', 'border': '1px solid #1f2937'}, children=[
+        html.Div(style={'flex': '1', 'min-width': '300px', 'max-width': '600px'}, children=[
             html.Label("Select AQ Variable:", style={'color': '#e0e6ed'}),
             dcc.Dropdown(
                 id='aq-dropdown',
                 options=[{'label': k, 'value': k} for k in ["AQ Index", "PM2.5", "PM10"]],
                 value="AQ Index",
+                clearable=False,
                 style=dropdown_style
             ),
-            dcc.Graph(id='choro-graph', style={'height': '500px', 'margin-top': '10px'})
+            dcc.Graph(id='choro-graph', style={'height': '500px', 'margin-top': '10px'}, config={
+        "displayModeBar": True,
+        "displaylogo": False,
+        "modeBarButtonsToRemove": [
+            "select2d",
+            "lasso2d",
+            "autoScale2d",
+            "resetScale2d",
+            "toggleSpikelines",
+            "hoverClosestCartesian",
+            "hoverCompareCartesian",
+            "toImage"
+        ],
+        "modeBarButtonsToAdd": [
+            "pan2d",
+            "reset2d"
+        ],
+    })
         ])
     ]),
 
     # ------------------------------
 # Row 2: Pie & Top 10 Bar charts
 # ------------------------------
-html.Div(style={'display': 'flex', 'gap': '20px', 'margin-bottom': '20px', 'justify-content': 'center'}, children=[
-    # Pie Chart
-    html.Div(style={'flex': '1', 'min-width': '300px', 'max-width': '600px', 'background': '#1a1d24',
+html.Div(style={'display': 'flex', 'gap': '20px', 'margin-bottom': '20px', 'justify-content': 'center', 'background': '#1a1d24',
                     'padding': '10px', 'border-radius': '8px', 'border': '1px solid #1f2937'}, children=[
+    # Pie Chart
+    html.Div(style={'flex': '1', 'min-width': '300px', 'max-width': '600px'}, children=[
         dcc.Graph(
             id='pie-graph',
-            style={'height': '400px'}
+            config={"displayModeBar": False},
+
+            style={'height': '600px', 'width': '100%'},  # increase height
         )
     ]),
 
     # Top 10 Bar Chart
-    html.Div(style={'flex': '1', 'min-width': '300px', 'max-width': '600px', 'background': '#1a1d24',
-                'padding': '10px', 'border-radius': '8px', 'border': '1px solid #1f2937'}, children=[
+    html.Div(style={'flex': '1', 'min-width': '300px', 'max-width': '600px'}, children=[
     html.Div(style={'display': 'flex', 'gap': '10px', 'margin-bottom': '15px'}, children=[
         html.Div(style={'flex': '1'}, children=[
             html.Label("Select Metric:", style={'color': '#e0e6ed'}),
@@ -273,6 +313,7 @@ html.Div(style={'display': 'flex', 'gap': '20px', 'margin-bottom': '20px', 'just
                     {'label': 'Total CO₂', 'value': 'value'}
                 ],
                 value='value',
+                clearable=False,
                 style=dropdown_style
             )
         ]),
@@ -281,15 +322,16 @@ html.Div(style={'display': 'flex', 'gap': '20px', 'margin-bottom': '20px', 'just
             dcc.Dropdown(
                 id='top10-order-dropdown',
                 options=[
-                    {'label': 'Top 10 (Best)', 'value': 'best'},
-                    {'label': 'Top 10 (Worst)', 'value': 'worst'}
+                    {'label': 'Highest', 'value': 'best'},
+                    {'label': 'Lowest', 'value': 'worst'}
                 ],
                 value='best',
+                clearable=False,
                 style=dropdown_style
             )
         ])
     ]),
-    dcc.Graph(id='top10-graph', style={'height': '500px'})
+    dcc.Graph(id='top10-graph', config={"displayModeBar": False}, style={'height': '500px'})
 ])
 
 ]),
@@ -307,7 +349,7 @@ html.Div(style={'display': 'flex', 'gap': '20px', 'margin-bottom': '20px', 'just
 ])
 
 
-forecast_start = 2010
+forecast_start = 2019
 
 @app.callback(
     Output('ts-graph', 'figure'),
@@ -323,7 +365,7 @@ def update_ts(selected_countries, selected_metric):
             d = co2[co2["country_name"] == country].sort_values("year")
 
             # Solid line for years before forecast
-            d_solid = d[d["year"] < forecast_start]
+            d_solid = d[d["year"] <= forecast_start]
             if not d_solid.empty:
                 fig.add_trace(go.Scatter(
                     x=d_solid["year"],
@@ -364,15 +406,34 @@ def update_ts(selected_countries, selected_metric):
         paper_bgcolor="#1a1d24",
         plot_bgcolor="#1a1d24",
         font=dict(color="#e0e6ed"),
+        legend=dict(
+            orientation="h",
+            yanchor="bottom",
+            y=1.02,
+            xanchor="center",
+            x=0.5,
+            bgcolor="rgba(0,0,0,0)"
+        ),
+        margin=dict(l=0, r=0, t=60, b=0),
+        xaxis=dict(
+            range=[2005, 2022]
+        ),
         xaxis_title="Year",
         yaxis_title=metric_labels[selected_metric]
+    )
+
+    if selected_metric in ["value", "co2_per_capita"]:
+        fig.update_layout(
+        xaxis=dict(
+            range=[2005, 2027]
+        ),
     )
 
     return fig
 
 @app.callback(
     Output('pie-graph', 'figure'),
-    Input('metric-dropdown', 'value')  # or another input if you want dynamic metric
+    Input('metric-dropdown', 'value')
 )
 def update_pie(metric):
     # Last 5 years
@@ -390,19 +451,36 @@ def update_pie(metric):
     other_mean = df_mean[~df_mean["country_name"].isin(df_top5["country_name"])]["value"].sum()
     df_pie = pd.concat([df_top5, pd.DataFrame({"country_name": ["Other"], "value": [other_mean]})], ignore_index=True)
     
+    # Gradient colors
+    colors = ['#4aa8ff', '#2f72c4', '#1c4f8c', '#14365e', '#0b1f33', '#050a19']  # example gradient
+    colors = colors[:len(df_pie)]  # match number of slices
+    
     fig = go.Figure(go.Pie(
         labels=df_pie["country_name"],
         values=df_pie["value"],
-        hole=0.3  # optional for donut
+        hole=0.3,
+        marker=dict(colors=colors),
+        textinfo='label',          # show names on chart
+        hovertemplate='%{label}: %{percent:.1%}<extra></extra>'  # percentage on hover
     ))
     
     fig.update_layout(
         paper_bgcolor="#1a1d24",
         plot_bgcolor="#1a1d24",
         font=dict(color="#e0e6ed"),
+        showlegend=False,
+        title={
+        'text': "CO₂ Emissions Distribution",
+        'y':0.95,
+        'x':0.5,
+        'xanchor': 'center',
+        'yanchor': 'top',
+        'font': dict(color="#e0e6ed", size=18)
+    },
     )
     
     return fig
+
 
 
 
@@ -453,9 +531,10 @@ def update_top10(metric, order):
         paper_bgcolor="#1a1d24",
         plot_bgcolor="#1a1d24",
         font=dict(color="#e0e6ed"),
-        xaxis_title=metric,
+        xaxis_title=metric_labels.get(metric, metric),
         yaxis_title="Country",
-        margin=dict(l=100, r=20, t=20, b=20)
+        margin=dict(l=20, r=00, t=0, b=0),
+        yaxis=dict(tickangle=-30,  ticklabelstandoff=10)  # rotate x-axis labels
     )
 
     return fig
@@ -498,11 +577,13 @@ def update_choro(selected_var):
         paper_bgcolor="#1a1d24",
         plot_bgcolor="#1a1d24",
         font=dict(color="#e0e6ed"),
-        margin=dict(l=20, r=20, t=20, b=20),
+        margin=dict(l=0, r=0, t=0, b=0),
         geo=dict(
             projection_type="natural earth",
             showcountries=False,
             showland=True,
+            showframe=True,
+            showlakes=False,
             landcolor="#111317",
             bgcolor="rgba(0,0,0,0)"
         )
