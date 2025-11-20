@@ -8,3 +8,6 @@ numpy
 matplotlib
 kagglehub
 nbformat
+statsmodels
+scikit-learn
+ipywidgets
