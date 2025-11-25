@@ -11,12 +11,16 @@ countries = pd.read_csv("data/country_map.csv")
 climate = pd.read_csv("data/climate.csv")
 co2 = pd.read_csv("data/co2.csv")
 
+co2_forecast = co2.copy()
+co2 = co2[co2['year'] < 2020] 
+
 for df in [aq, climate, co2, countries]:
     df["country_code"] = df["country_code"].str.upper()
 
 aq = aq.merge(countries, on="country_code", how="left")
 climate = climate.merge(countries, on="country_code", how="left")
 co2 = co2.merge(countries, on="country_code", how="left")
+co2_forecast = co2_forecast.merge(countries, on="country_code", how="left")
 
 all_countries = sorted(co2["country_name"].unique())
 metric_labels = {
@@ -112,7 +116,7 @@ def aggregate_by_subregion():
 
     # Rename columns for display
     df = df.rename(columns={
-        "sub_region": "Sub-Region",
+        "sub_region": "Region",
         "co2": "CO₂ Total (Mt)",
         "co2_per_capita": "CO₂ per Capita (T)",
         "temp_min": "Min Temp (°C)",
@@ -362,7 +366,7 @@ def update_ts(selected_countries, selected_metric):
     for country in selected_countries:
         if selected_metric in ["co2", "co2_per_capita"]:
             # CO2 metrics per country
-            d = co2[co2["country_name"] == country].sort_values("year")
+            d = co2_forecast[co2_forecast["country_name"] == country].sort_values("year")
 
             # Solid line for years before forecast
             d_solid = d[d["year"] <= forecast_start]
