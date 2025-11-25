@@ -193,17 +193,17 @@ app.layout = html.Div(style=dark_style, children=[
         html.Div(style={'background': '#1a1d24', 'padding': '20px', 'border-radius': '8px',
                         'text-align': 'center', 'border': '1px solid #1f2937', 'flex': '1'}, children=[
             "Global CO₂ per Capita", html.Br(), html.B(f"{(co2_pc_latest*1e3):.2f} T"),
-            html.Br(), html.Span(f"Trend: {co2_pc_trend:+.2f}%", style={'color': "#9b9b9b"})
+            html.Br(), html.Span(f"Trend: {co2_pc_trend:+.2f}%", style={'color': '#00aa55' if co2_pc_trend > 0 else '#cc4444'})
         ]),
         html.Div(style={'background': '#1a1d24', 'padding': '20px', 'border-radius': '8px',
                         'text-align': 'center', 'border': '1px solid #1f2937', 'flex': '1'}, children=[
             "Total CO₂", html.Br(), html.B(f"{(co2_total_latest / 1e6):.2f} Gt"),
-            html.Br(), html.Span(f"Trend: {co2_total_trend:+.2f}%", style={'color': "#9b9b9b"})
+            html.Br(), html.Span(f"Trend: {co2_pc_trend:+.2f}%", style={'color': '#00aa55' if co2_pc_trend > 0 else '#cc4444'})
         ]),
         html.Div(style={'background': '#1a1d24', 'padding': '20px', 'border-radius': '8px',
                         'text-align': 'center', 'border': '1px solid #1f2937', 'flex': '1'}, children=[
             "Global Avg Max Temperature", html.Br(), html.B(f"{temp_max_latest:.2f} °C"),
-            html.Br(), html.Span(f"Trend: {temp_max_trend:+.2f}%", style={'color': "#9b9b9b"})
+            html.Br(), html.Span(f"Trend: {co2_pc_trend:+.2f}%", style={'color': '#00aa55' if co2_pc_trend > 0 else '#cc4444'})
         ])
     ]),
 
