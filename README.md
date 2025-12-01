@@ -4,7 +4,7 @@
 
 ## Features
 
-- Time series visualization of CO₂ and climate metrics per country.
+- Time series visualization and forecasting of CO₂ and climate metrics by country.
 - Choropleth maps for air quality indicators.
 - Pie charts and top-10 bar charts for comparative analysis.
 - Summary table of sub-region statistics with intuitive styling.
