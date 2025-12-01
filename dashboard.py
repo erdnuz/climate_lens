@@ -32,6 +32,7 @@ metric_labels = {
 }
 
 
+
 climate_yearly = climate.groupby("year").agg({
     "temp_min": "min",
     "temp_max": "max",
@@ -122,7 +123,7 @@ def aggregate_by_subregion():
         "temp_min": "Min Temp (°C)",
         "temp_max": "Max Temp (°C)",
         "R1": "Avg Rainfall (mm)",
-        "aq": "AQ Index",
+        "aq": "Air Quality Index",
         "PM2.5": "PM2.5",
         "PM10": "PM10"
     })
@@ -257,11 +258,11 @@ app.layout = html.Div(style=dark_style, children=[
             }),
         ]),
         html.Div(style={'flex': '1', 'min-width': '300px', 'max-width': '600px'}, children=[
-            html.Label("Select AQ Variable:", style={'color': '#e0e6ed'}),
+            html.Label("Select Pollutant Variable:", style={'color': '#e0e6ed'}),
             dcc.Dropdown(
                 id='aq-dropdown',
-                options=[{'label': k, 'value': k} for k in ["AQ Index", "PM2.5", "PM10"]],
-                value="AQ Index",
+                options=[{'label': k, 'value': k} for k in ["Air Quality Index", "PM2.5", "PM10"]],
+                value="Air Quality Index",
                 clearable=False,
                 style=dropdown_style
             ),
@@ -345,7 +346,7 @@ html.Div(style={'display': 'flex', 'gap': '20px', 'margin-bottom': '20px', 'just
     # Row 3: Table
     # ------------------------------
     html.Div(style={'display': 'flex', 'gap': '20px', 'margin-bottom': '20px', 'justify-content': 'center'}, children=[
-        html.Div(style={'flex': '1', 'min-width': '300px', 'max-width': '1200px', 'background': '#1a1d24',
+        html.Div(style={'flex': '1', 'min-width': '300px', 'background': '#1a1d24',
                         'padding': '10px', 'border-radius': '8px', 'border': '1px solid #1f2937'}, children=[
             table
         ])
@@ -535,7 +536,7 @@ def update_top10(metric, order):
         paper_bgcolor="#1a1d24",
         plot_bgcolor="#1a1d24",
         font=dict(color="#e0e6ed"),
-        xaxis_title=metric_labels.get(metric, metric),
+        xaxis_title=metric_labels.get(metric, "Air Quality Index" if metric == "aq" else metric),
         yaxis_title="Country",
         margin=dict(l=20, r=00, t=0, b=0),
         yaxis=dict(tickangle=-30,  ticklabelstandoff=10)  # rotate x-axis labels
@@ -551,7 +552,7 @@ def update_top10(metric, order):
     Input('aq-dropdown', 'value')
 )
 def update_choro(selected_var):
-    map_vars = {"AQ Index": "aq", "PM2.5": "PM2.5", "PM10": "PM10"}
+    map_vars = {"Air Quality Index": "aq", "PM2.5": "PM2.5", "PM10": "PM10"}
     col = map_vars[selected_var]
 
     def compute_bounds(series):
