@@ -1,52 +1,190 @@
-/* Dropdown control (selected text) */
 /* Remove default page margins and enforce dark page background */
-body, html {
+body,
+html {
     margin: 0 !important;
     padding: 0 !important;
     background-color: #0f1116 !important;
 }
 
+/* Force Dash 4 design tokens to match the app's dark theme */
+:root {
+    --Dash-Fill-Inverse-Strong: #1a1d24;
+    --Dash-Fill-Inverse-strong: #1a1d24;
+    --Dash-Fill-Interactive-Weak: #1a1d24;
+    --Dash-Fill-Interactive-Strong: #1f2937;
+    --Dash-Fill-Primary-Hover: #253143;
+    --Dash-Fill-Primary-Active: #1f2937;
+    --Dash-Stroke-Weak: #1f2937;
+    --Dash-Stroke-Strong: #2a3546;
+    --Dash-Text-Strong: #e0e6ed;
+    --Dash-Text-Weak: #c7d1dc;
+    --Dash-Text-Primary: #e0e6ed;
+}
 
-.Select-control {
+/* Shared dashboard select theme (legacy + Dash 4/react-select variants) */
+.Select-control,
+.cl-select .Select-control,
+.cl-select [class*='-control'],
+.cl-select [class*='__control'],
+#country-dropdown .Select-control,
+#country-dropdown [class*='-control'],
+#country-dropdown [class*='__control'],
+#metric-dropdown .Select-control,
+#metric-dropdown [class*='-control'],
+#metric-dropdown [class*='__control'],
+#aq-dropdown .Select-control,
+#aq-dropdown [class*='-control'],
+#aq-dropdown [class*='__control'],
+#top10-dropdown .Select-control,
+#top10-dropdown [class*='-control'],
+#top10-dropdown [class*='__control'],
+#top10-order-dropdown .Select-control,
+#top10-order-dropdown [class*='-control'],
+#top10-order-dropdown [class*='__control'] {
+    background: #1a1d24 !important;
     background-color: #1a1d24 !important;
     color: #e0e6ed !important;
-    border: 1px solid #2a2f3b !important;
+    border: 1px solid #1f2937 !important;
+    border-radius: 8px !important;
+    box-shadow: none !important;
+    min-height: 38px !important;
 }
 
-/* Placeholder text */
-.Select-placeholder {
+.Select-placeholder,
+.Select-input > input,
+.Select-value-label,
+.Select-value,
+.cl-select [class*='-placeholder'],
+.cl-select [class*='-singleValue'],
+.cl-select [class*='-valueContainer'],
+.cl-select [class*='-input'] input,
+.cl-select [class*='__placeholder'],
+.cl-select [class*='__single-value'],
+.cl-select [class*='__value-container'],
+.cl-select [class*='__input'] input,
+.cl-select .Select-placeholder,
+.cl-select .Select-input > input,
+.cl-select .Select-value-label {
     color: #e0e6ed !important;
+    background: transparent !important;
+    background-color: transparent !important;
 }
 
-/* Value text */
-.Select-value-label {
-    color: #e0e6ed !important;
-}
-
-/* Dropdown menu background */
-.Select-menu-outer {
+.Select-menu-outer,
+.cl-select [class*='-menu'],
+.cl-select [class*='-menuList'],
+.cl-select [class*='__menu'],
+.cl-select [class*='__menu-list'],
+.cl-select .Select-menu-outer {
+    background: #1a1d24 !important;
     background-color: #1a1d24 !important;
-    border: 1px solid #2a2f3b !important;
+    border: 1px solid #1f2937 !important;
+    border-radius: 8px !important;
 }
 
-/* Option text */
-.Select-option {
+.Select-option,
+.VirtualizedSelectOption,
+.cl-select [class*='-option'],
+.cl-select [class*='__option'],
+.cl-select .Select-option {
+    background: #1a1d24 !important;
     background-color: #1a1d24 !important;
     color: #e0e6ed !important;
 }
 
-/* Highlighted option */
-.Select-option.is-focused {
-    background-color: #2a2f3b !important;
+.Select-option.is-focused,
+.Select-option.is-selected,
+.VirtualizedSelectFocusedOption,
+.cl-select [class*='-option'][aria-selected='true'],
+.cl-select [class*='__option'][aria-selected='true'],
+.cl-select .Select-option.is-focused,
+.cl-select .Select-option.is-selected {
+    background: #1f2937 !important;
+    background-color: #1f2937 !important;
     color: #e0e6ed !important;
 }
 
-/* Selected option in menu */
-.Select-option.is-selected {
-    background-color: #25303e !important;
+.Select-arrow-zone,
+.Select-clear-zone,
+.cl-select [class*='-indicator'],
+.cl-select [class*='__indicator'],
+.cl-select .Select-arrow-zone,
+.cl-select .Select-clear-zone {
     color: #e0e6ed !important;
 }
 
-.Select-input input {
+.Select--multi .Select-value,
+.cl-select .Select--multi .Select-value {
+    background: transparent !important;
+    background-color: transparent !important;
+    border: none !important;
+    border-radius: 0 !important;
     color: #e0e6ed !important;
+}
+
+.Select--multi .Select-value-icon,
+.cl-select .Select--multi .Select-value-icon {
+    border-right: none !important;
+    color: #e0e6ed !important;
+}
+
+.Select--multi .Select-value-icon:hover,
+.cl-select .Select--multi .Select-value-icon:hover {
+    background-color: transparent !important;
+    color: #e0e6ed !important;
+}
+
+.Select-control:hover,
+.is-focused .Select-control,
+.is-open .Select-control,
+.cl-select [class*='-control']:hover,
+.cl-select .Select-control:hover,
+.cl-select.is-focused .Select-control,
+.cl-select.is-open .Select-control {
+    border-color: #4aa8ff !important;
+}
+
+.cl-select [class*='-menu'] {
+    z-index: 1100 !important;
+}
+
+/* Dropdown menus rendered in a portal may sit outside .cl-select */
+[class*='-menu'],
+[class*='-menuList'],
+[class*='__menu'],
+[class*='__menu-list'] {
+    background-color: #1a1d24 !important;
+    color: #e0e6ed !important;
+}
+
+[class*='-option'],
+[class*='__option'] {
+    background-color: #1a1d24 !important;
+    color: #e0e6ed !important;
+}
+
+[class*='-option'][aria-selected='true'],
+[class*='__option'][aria-selected='true'] {
+    background-color: #1f2937 !important;
+    color: #e0e6ed !important;
+}
+
+/* Ensure option text itself never gets a pill/background fill */
+.dash-options-list-option-text,
+label.dash-options-list-option .dash-options-list-option-text,
+label.dash-options-list-option.selected .dash-options-list-option-text,
+.dash-dropdown-option.selected .dash-options-list-option-text .dash-options-list-option-wrapper,
+#radix-\:r1\: .dash-options-list-option-text {
+    background: transparent !important;
+    background-color: transparent !important;
+}
+
+.dash-options-list-option-wrapper,
+.dash-options-list-option-checkbox,
+label.dash-options-list-option .dash-options-list-option-wrapper,
+label.dash-options-list-option .dash-options-list-option-checkbox,
+label.dash-options-list-option.selected .dash-options-list-option-wrapper,
+label.dash-options-list-option.selected .dash-options-list-option-checkbox {
+    background: transparent !important;
+    background-color: transparent !important;
 }

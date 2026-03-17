@@ -1,41 +1,93 @@
 # Climate Lens
 
-**Climate Lens** is an interactive dashboard for visualizing global climate and air quality data, including CO₂ emissions, temperature, rainfall, and air quality metrics. The dashboard provides time series, choropleth maps, pie charts, bar charts, and summary tables for different countries and regions.
+Climate Lens is an interactive dashboard for analyzing global CO2, climate, and air-quality signals across countries and regions.
 
-## Features
+## What the Dashboard Includes
 
-- Time series visualization and forecasting of CO₂ and climate metrics by country.
-- Choropleth maps for air quality indicators.
-- Pie charts and top-10 bar charts for comparative analysis.
-- Summary table of sub-region statistics with intuitive styling.
+- Time-series views for CO2 and climate metrics by country.
+- Global choropleth mapping for air-quality indicators.
+- Comparative charts (distribution pie and top-10 ranking bars).
+- Regional summary table with latest aggregated values by sub-region.
 
-## Installation
+## Quick Start
 
-1. **Clone the repository**:
+1. Clone the repository:
 
-    ```bash
-    git clone https://github.com/erdnuz/climate_lens
-    cd climate_lens
-    ```
+```bash
+git clone https://github.com/erdnuz/climate_lens
+cd climate_lens
+```
 
-2. **Create a Virtual Environment**:
+1. Create and activate a virtual environment:
 
-    ```bash
-    python3 -m venv venv
-    source venv/bin/activate  # On Windows use: venv\Scripts\activate
-    ```
+```bash
+python3 -m venv venv
+source venv/bin/activate
+```
 
-3. **Install Dependencies**:
+1. Install dependencies:
 
-    ```bash
-    pip install -r requirements.txt
-    ```
+```bash
+pip install -r requirements.txt
+```
 
-4. **Run Dashboard**:
+1. Run the app:
 
-    ```bash
-    python dashboard.py
-    ```
+```bash
+python dashboard.py
+```
 
-5. **Using the Dashboard**:
-    Open a web browser and navigate to <http://127.0.0.1:8050> to view the dashboard.
+1. Open [http://127.0.0.1:8050](http://127.0.0.1:8050).
+
+## Project Structure
+
+```text
+climate_lens/
+├── climate_lens/
+│   ├── config.py
+│   ├── data/
+│   │   ├── loader.py
+│   │   ├── transform.py
+│   │   └── validator.py
+│   └── viz/
+│       └── figures.py
+├── data/
+├── notebooks/
+│   ├── preprocessing.ipynb
+│   ├── imputation.ipynb
+│   ├── co2_forecast_analysis.ipynb
+│   ├── co2_holt_forecast.ipynb
+│   └── data_explore/
+├── docs/
+├── assets/
+└── dashboard.py
+```
+
+## Architecture
+
+- dashboard.py is the composition layer for layout and callbacks.
+- climate_lens.data handles loading, schema checks, and transformations.
+- climate_lens.viz handles Plotly figure construction.
+- climate_lens.config centralizes labels, paths, and styling constants.
+
+## Data Files Used at Runtime
+
+- data/co2.csv
+- data/climate.csv
+- data/aq_imputed.csv
+- data/country_map.csv
+
+## Documentation
+
+- Architecture: docs/ARCHITECTURE.md
+- Data dictionary: docs/DATA_DICTIONARY.md
+- Developer setup: docs/DEVELOPER_SETUP.md
+
+## Notebook Usage
+
+All notebooks and exploratory files are under notebooks/.
+Application logic for runtime should be implemented in climate_lens/ modules and composed in dashboard.py.
+
+## Data Provenance
+
+Original raw datasets were pulled from Kaggle via kagglehub in the first cell of notebooks/preprocessing.ipynb.
